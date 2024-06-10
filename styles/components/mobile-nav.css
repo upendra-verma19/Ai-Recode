@@ -1,0 +1,66 @@
+.mobile-nav{
+    position: absolute;
+    /* border: 1px solid green; */
+    top: 0;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--clr-dark);
+    opacity: 0; /* Initially hide the menu */
+    visibility: hidden; /* Initially hide the menu */
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s, visibility 0.3s; /* Add transitions for opacity and visibility */
+    display: flex; /* Keep this for layout purposes */
+    flex-direction: column; /* Adjust as needed */
+}
+
+.mobile-nav__menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mobile-nav__link{
+    font-size: var(--size-lg);
+    text-decoration: none;
+    margin: 0 auto 16px;
+    font-weight: 600;
+    color: var(--clr-slate600);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+}
+
+.mobile-nav__link:hover{
+    color: var(--clr-green);
+}
+
+.mobile-nav__link-line{
+    border: 1px solid var(--clr-slate800);
+    padding-right: 2em;
+}
+
+.mobile__theme-toggle-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-nav__moon,
+.mobile-nav__sun{
+    display: block;
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+    color: var(--clr-slate600);
+}
+
+.mobile-nav__moon:hover,
+.mobile-nav__moon:hover{
+    color: var(--clr-green);
+}
